@@ -10,7 +10,7 @@ services:
       POSTGRES_DB: ticket-db
       POSTGRES_USER: gdgadmin
       POSTGRES_PASSWORD: corona2020
-  api:
+  app:
     container_name: ticket-api
     build: .
     depends_on: 

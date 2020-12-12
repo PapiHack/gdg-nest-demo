@@ -1,0 +1,23 @@
+version: '3'
+services:
+  ticket-db:
+    image: postgres
+    container_name: ticket-db
+    volumes: 
+      - db_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: ticket-db
+      POSTGRES_USER: gdg-admin
+      POSTGRES_PASSWORD: corona2020
+    restart: always
+
+  ticket-api:
+    build: .
+    container_name: ticket-api
+    restart: always
+    ports: 
+      - "8080:3000"
+    depends_on: 
+      - ticket-db
+volumes:
+  db_data: {}

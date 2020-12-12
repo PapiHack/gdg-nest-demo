@@ -1,8 +1,8 @@
 {
   "name": "gdg-nest-demo",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Simple Rest API built with NestJS for GDG Dakar Meetup",
+  "author": "PapiHack",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {

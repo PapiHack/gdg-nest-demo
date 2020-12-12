@@ -1,73 +1,52 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
+# NestJS Ticket REST API
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<a href="https://github.com/nestjs/nest"><img src="https://raw.githubusercontent.com/nestjsx/crud/master/img/nest-powered.svg?sanitize=true" alt="Nest Powered" />
+</a>
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![Coverage Status](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://coveralls.io/github/PapiHack/https://github.com/PapiHack/gdg-nest-demo?branch=master)
+![Issues](https://img.shields.io/github/issues/PapiHack/gdg-nest-demo)
+![PR](https://img.shields.io/github/issues-pr/PapiHack/gdg-nest-demo)
+[![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+This is a simple REST API built with `NestJS` during `GDG Dakar Meetup` for manage tickets.
+I also use `Docker` & `Docker Compose` in order to containerize the stack.
 
-## Description
+## Usage
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+### Local Installation
 
-## Installation
+- After cloning or pulling the project, edit the .env file, fill in the parameters located at the level of the .env.example file.
 
-```bash
-$ npm install
-```
+- Run `npm install` in order to install all necessary dependecies
 
-## Running the app
+- Edit `config/typeorm.config.ts` file by updating `type` property of `TypeOrmConfiguration` variable depending on your database type (`mysql`, `postgres`, etc).
 
-```bash
-# development
-$ npm run start
+- Run `npm run start` in order to start the nest server
 
-# watch mode
-$ npm run start:dev
+- Then go to <http://localhost:3000/docs> in order to visualize the `Swagger Documentation` of the API
 
-# production mode
-$ npm run start:prod
-```
+### Docker Installation
 
-## Test
+If you already have `Docker` and `Docker Compose` installed in your system, you have just to :
 
-```bash
-# unit tests
-$ npm run test
+- Rename the `.env.example` file to `.env`
 
-# e2e tests
-$ npm run test:e2e
+- Run the following command: `docker-compose up -d`
 
-# test coverage
-$ npm run test:cov
-```
+After that, you can visit <http://localhost:8080/docs>
 
-## Support
+### Screenshots
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+![screenshot](./screenshots/api_docs_detailed.png)
 
-## Stay in touch
+## Contributing
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+Feel free to make a PR or report an issue 😃
 
-## License
+Oh, one more thing, please do not forget to put a description when you make your PR 🙂
 
-Nest is [MIT licensed](LICENSE).
+## Contributors
+
+- [M.B.C.M](https://itdev.sn)
+[![My Twitter Link](https://img.shields.io/twitter/follow/the_it_dev?style=social)](https://twitter.com/the_it_dev)

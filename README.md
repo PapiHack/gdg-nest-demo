@@ -1,4 +1,4 @@
-# NestJS Ticket REST API
+# GDG Dakar Meetup Demo - NestJS Ticket REST API
 
 <a href="https://github.com/nestjs/nest"><img src="https://raw.githubusercontent.com/nestjsx/crud/master/img/nest-powered.svg?sanitize=true" alt="Nest Powered" />
 </a>

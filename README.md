@@ -16,7 +16,7 @@ I also use `Docker` & `Docker Compose` in order to containerize the stack.
 
 ### Local Installation
 
-- After cloning or pulling the project, edit the .env file, fill in the parameters located at the level of the .env.example file.
+- After cloning or pulling the project, edit the .env file, fill in the parameters located at the level of the .env.example file and rename it to `.env`.
 
 - Run `npm install` in order to install all necessary dependecies
 
@@ -35,6 +35,8 @@ If you already have `Docker` and `Docker Compose` installed in your system, you 
 - Run the following command: `docker-compose up -d`
 
 After that, you can visit <http://localhost:8080/docs>
+
+Run `docker-compose down` to stop and remove all the services or `docker-compose stop` to only stop services.
 
 ### Screenshots
 
